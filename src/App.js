@@ -8,8 +8,5 @@ class App extends React.Component {
         <HomePage />
              </div>
     }
-        
-    
-  
  }
 export default App;
