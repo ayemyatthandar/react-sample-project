@@ -6,7 +6,7 @@ export const HomePage = () => {
   return (
     <div className='HomePage'>
         <h1> Home Page</h1>
-        <CoinToss />
+        <CoinToss /> <br/>
         <RangeRandom />
 
 
