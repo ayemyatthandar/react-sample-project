@@ -1,5 +1,5 @@
 import {useState} from 'react';
-export const coinToss = () => {
+export const CoinToss = () => {
     const [coinValue,setCoinValue] = useState("");
     const flipCoin = () => {
         const  randomVal = Math.random() * 10;
@@ -21,4 +21,3 @@ export const coinToss = () => {
     </div>
     );
  }
-export default App;
