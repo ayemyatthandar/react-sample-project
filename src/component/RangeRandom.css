@@ -1,0 +1,59 @@
+.RangeRandom{
+    width: 100%;
+    min-height: 300px;
+    color: black;
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+  }
+
+.RangeRandom .container .randomNumber{
+    background-color: peru;
+    padding: 10px;
+  }
+
+.RangeRandom .container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 70px;
+    background-color: navajowhite;
+    display: flex;
+    flex-direction: column;
+  }
+.RangeRandom .numContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  width : 100%
+}
+
+.RangeRandom .numContainer div{
+  width: 100%;
+  max-width: 45%;
+}
+
+.RangeRandom .container button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: alias;
+    background-color: palevioletred;
+    color: azure;
+  }
+
+.RangeRandom .container button:hover {
+    filter : brightness(100%)
+}
+
+.RangeRandom .container button:disabled {
+    cursor: not-allowed;
+    background-color: rgb(20, 199, 20);
+}
+
+.RangeRandom .randomNumber .bold-text{
+    font-weight: bold;
+    color: bisque;
+}
