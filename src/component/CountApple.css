@@ -1,0 +1,13 @@
+.countApple{
+    width: 350px;
+    min-height: 200px;
+    background-color: rgb(243, 197, 136);
+    color: black;
+    border: 1px solid white;
+    padding:  auto; margin: auto;
+    text-align: center;
+}
+.countApple .count{
+    outline: 5px solid rgb(30, 34, 30);
+    background-color: beige;
+}
