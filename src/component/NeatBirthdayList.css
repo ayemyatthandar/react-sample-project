@@ -1,0 +1,18 @@
+.NeatBirthdayList {
+    width: 350px;
+    min-height: 200px;
+    background-color: rgb(243, 197, 136);
+    color: black;
+    border: 1px solid white;
+    padding-left: 2px; 
+    margin: auto;
+    text-align : left;
+
+}
+li{
+    width:200px;
+    height:  40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 30px 20px ;
+
+}

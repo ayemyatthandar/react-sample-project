@@ -1,25 +1,29 @@
-import {useEffect, useState} from 'react'
-import "./CountApple.css";
+
+import React, { useEffect, useState } from "react"
+import "./CountApple.css"
+
 export const CountApple = () => {
-    const[value,setValue] = useState(0);
-    const resultCount = () =>{
-        return value % 2 ===0 ? "even" : "odd"
-    };
-    useEffect ( () => {
-        setValue (Math.floor(10 + Math.random() * 90));
-    }, [setValue])
+  const [appleCount, setAppleCount] = useState(0)
+  const [evenOrOdd, setEvenOrOdd] = useState("Even")
+
+  const generateRandom = () => {
+    return (Math.round(Math.random() * 10) % 3) + 1
+  }
+
+  useEffect(() => {
+    setEvenOrOdd(appleCount % 2 === 0 ? "Even" : "Odd")
+  }, [appleCount])
+
   return (
-    <div className='countApple'>
-        <div className='count'>
-            <h1> 🍎count : {value} </h1>
-        </div> <br/>
-    <div className='answer'> 
-        Answer : {resultCount()}
-    </div> <br/>
-    <button className = "btn" onClick={ () => setValue (Math.floor(10 + Math.random() * 90))}>
+    <div className="CountApple">
+      <p>
+        🍎<b>Count</b>: {appleCount}
+      </p>
+      <p>Even or odd? {evenOrOdd}</p>
+      <br />
+      <button onClick={() => setAppleCount(appleCount + generateRandom())}>
         Add Some Apples
-    </button><br/>
+      </button>
     </div>
   )
 }
-
