@@ -1,0 +1,16 @@
+.DisplayEditList {
+    padding: 24px;
+    text-align: left;
+    background-color: rgb(201, 141, 62);
+    border:  1px solid white;
+    width: 300px;
+    margin: auto;
+  }
+.li-tag {
+    cursor: pointer;
+    font-size: large;
+    margin: 5px;
+  }
+.DisplayEditList .input-area button{
+    margin-left: 10px;
+  }

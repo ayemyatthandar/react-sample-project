@@ -4,6 +4,7 @@ import { CountApple } from '../component/CountApple';
 import { NeatBirthdayList } from '../component/NeatBirthdayList';
 import { RangeRandom } from '../component/RangeRandom';
 import { TextMirror } from '../component/TextMirror';
+import {DisplayEditList} from '../component/DisplayEditList';
 
 export const HomePage = () => {
   return (
@@ -13,9 +14,8 @@ export const HomePage = () => {
         <RangeRandom /><br/>
         <CountApple/><br/>
         <TextMirror/><br/>
-        <NeatBirthdayList/>
-
-
+        <NeatBirthdayList/><br/>
+        <DisplayEditList/>
     </div>
   );
 }
