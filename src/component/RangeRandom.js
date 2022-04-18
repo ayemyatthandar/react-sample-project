@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import './RangeRandom.css';
+
 export const RangeRandom = () => {
     const[startVal,setStartVal] = useState("");
     const[endVal,setEndVal] = useState("");

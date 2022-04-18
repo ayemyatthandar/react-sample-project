@@ -1,12 +1,14 @@
 import React from 'react';
-import { HomePage } from './pages/HomePage';
+import Home from './pages/Home';
+
 class App extends React.Component {
   
     render()
     {
-      return  <div className="App">
+      return (
+      <div className="App">
         <Home />
-             </div>
+      </div>)
     }
  }
 export default App;

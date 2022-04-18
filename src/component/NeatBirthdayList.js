@@ -1,5 +1,6 @@
 import React from 'react'
 import './NeatBirthdayList.css'
+
 export const NeatBirthdayList = () => {
     const item = [
       { name: 'Rose', birthday:  "feb-23"},
