@@ -5,7 +5,6 @@ import { NeatBirthdayList } from '../component/NeatBirthdayList';
 import { RangeRandom } from '../component/RangeRandom';
 import { TextMirror } from '../component/TextMirror';
 import {DisplayEditList} from '../component/DisplayEditList';
-
 export const HomePage = () => {
   return (
     <div className='HomePage'>

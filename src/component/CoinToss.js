@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {css} from '@emotion/react';
 export const CoinToss = () => {
     const [coinValue,setCoinValue] = useState("");
     const flipCoin = () => {
@@ -7,6 +8,7 @@ export const CoinToss = () => {
         Math.floor(randomVal % 2) === 0
         ? setCoinValue("HEAD") : setCoinValue("TAIL");
     };
+  
     return (
      <div className="coinToss">
         <div id="coin" key={+new Date()}>
@@ -15,9 +17,18 @@ export const CoinToss = () => {
             </div>
         </div>
         <h2> Flip a Coin</h2>
-      <button id="btn" onClick={() => flipCoin()}>
+      <button css ={styles.flipButton} id="btn" onClick={() => flipCoin()}>
        Flip Coin
       </button>
     </div>
     );
  }
+
+ const styles = { flipButton:css
+ `padding: 32px;
+ background-color: hotpink;
+ font-size: 24px;
+ border-radius: 4px;
+ color: black;
+ font-weight: bold;
+ &:hover {color: white};`,}
