@@ -1,6 +1,8 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import { useState} from 'react';
 import "./DisplayEditList.css";
+import { css } from '@emotion/react';
 
 export const DisplayEditList = () => {
 
@@ -23,17 +25,29 @@ export const DisplayEditList = () => {
     };
   
     return (
-      <div className="DisplayEditList">
+      <div css ={css ({
+        padding: 24,
+        textAlign: 'left',
+        backgroundColor: 'rgb(201, 141, 62)',
+        border:  '1px solid white',
+        margin: 'auto',
+      })} className="DisplayEditList">
         <div className='input-area'>
             <input type='text' value={inputText} onChange={onValueChange}/>
-          <button onClick={addValue} disabled={inputText?.length<=0} >
+          <button css ={css ({
+              marginleft: 10,
+            })} onClick={addValue} disabled={inputText?.length<=0} >
               Save
           </button>
         </div>
         <ul>
           {
             arr.map((text, index) => 
-            <li key={index} className='li-tag' onClick={() => onDelete(index)}>
+            <li css ={css ({
+              cursor: 'pointer',
+              fontSize: 'large',
+              margin: 5,
+            })} key={index} className='li-tag' onClick={() => onDelete(index)}>
                 {text}
             </li>)
           }

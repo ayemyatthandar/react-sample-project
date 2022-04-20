@@ -1,4 +1,4 @@
-.RangeRandom{
+/*/.RangeRandom{
     width: 100%;
     min-height: 300px;
     color: black;
@@ -7,12 +7,12 @@
     justify-content: space-between;
   }
 
-.RangeRandom .container .randomNumber{
+/.RangeRandom .container .randomNumber{
     background-color: peru;
     padding: 10px;
   }
 
-.RangeRandom .container{
+/.RangeRandom .container{
     width: 100%;
     max-width: 500px;
     margin: auto;
@@ -21,14 +21,14 @@
     display: flex;
     flex-direction: column;
   }
-.RangeRandom .numContainer{
+/.RangeRandom .numContainer{
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
   width : 100%
 }
 
-.RangeRandom .numContainer div{
+/.RangeRandom .numContainer div{
   width: 100%;
   max-width: 45%;
 }
@@ -56,4 +56,17 @@
 .RangeRandom .randomNumber .bold-text{
     font-weight: bold;
     color: bisque;
+}*/
+.RangeRandom .container button:hover {
+  filter : brightness(100%)
+}
+
+.RangeRandom .container button:disabled {
+  cursor: not-allowed;
+  background-color: rgb(20, 199, 20);
+}
+
+.RangeRandom .randomNumber .bold-text{
+  font-weight: bold;
+  color: bisque;
 }

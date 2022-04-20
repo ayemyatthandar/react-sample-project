@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import {useState} from 'react';
 import {css} from '@emotion/react';
 export const CoinToss = () => {
@@ -10,7 +11,11 @@ export const CoinToss = () => {
     };
   
     return (
-     <div className="coinToss">
+     <div  css={css({
+      margin: 10,
+      padding: 10,
+      backgroundColor: 'blue',
+    })} className="coinToss">
         <div id="coin" key={+new Date()}>
             <div className= {coinValue === "TAIL" ? "side-a":"side-b"}>
               <h2> {coinValue}</h2>
@@ -25,7 +30,7 @@ export const CoinToss = () => {
  }
 
  const styles = { flipButton:css
- `padding: 32px;
+ `padding: 10px;
  background-color: hotpink;
  font-size: 24px;
  border-radius: 4px;
