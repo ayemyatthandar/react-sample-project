@@ -4,6 +4,7 @@
     background-color: rgb(243, 197, 136);
     color: black;
     border: 1px solid white;
-    padding:  auto; margin: auto;
+    border-radius:10px;
+    padding:  a5px 0; margin: 60px 200px 50px 500px;
     text-align: center;
 }*/

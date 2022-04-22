@@ -15,19 +15,19 @@ export const CountApple = () => {
   }, [appleCount])
 
   return (
-    <div css={css({
-      width: 350 ,
-      height: 200 ,
-      backgroundColor: 'rgb(243, 197, 136)',
-      border:  '2px solid pink',
-      color: 'black',
-      padding: '20px',
-      margin: '100px 200px 300px 400px',
-      textAlign: 'center',
-    })} className="CountApple">
+    <div  css={css
+    `width: 350px;
+    min-height: 200px;
+    background-color: #85929E ;
+    color: black;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px 300px 70px 500px;
+    text-align: center;`} className="CountApple">
       <p>
         🍎<b>Count</b>: {appleCount}
-      </p>
+      </p> <br />
       <p >Even or odd? {evenOrOdd}</p>
       <br />
       <button onClick={() => setAppleCount(appleCount + generateRandom())}>

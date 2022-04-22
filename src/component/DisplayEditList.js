@@ -25,29 +25,28 @@ export const DisplayEditList = () => {
     };
   
     return (
-      <div css ={css ({
-        padding: 24,
-        textAlign: 'left',
-        backgroundColor: 'rgb(201, 141, 62)',
-        border:  '1px solid white',
-        margin: 'auto',
-      })} className="DisplayEditList">
+      <div  css={css
+      `padding: 24px;
+      text-align: left;
+      background-color: #154360 ;
+      border:  1px solid white;
+      width: 300px;
+      min-heigh: 300px;
+      border-radius: 10px;
+      margin: 100px 100px 50px 500px;`} className="DisplayEditList">
         <div className='input-area'>
             <input type='text' value={inputText} onChange={onValueChange}/>
-          <button css ={css ({
-              marginleft: 10,
-            })} onClick={addValue} disabled={inputText?.length<=0} >
+          <button   css={css`margin-left: 10px;`} onClick={addValue} disabled={inputText?.length<=0} >
               Save
           </button>
         </div>
         <ul>
           {
             arr.map((text, index) => 
-            <li css ={css ({
-              cursor: 'pointer',
-              fontSize: 'large',
-              margin: 5,
-            })} key={index} className='li-tag' onClick={() => onDelete(index)}>
+            <li  css={css
+            `cursor: pointer;
+            font-size: large;
+            margin: 5px;`} key={index} className='li-tag' onClick={() => onDelete(index)}>
                 {text}
             </li>)
           }

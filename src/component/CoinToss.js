@@ -11,17 +11,22 @@ export const CoinToss = () => {
     };
   
     return (
-     <div  css={css({
-      margin: 10,
-      padding: 10,
-      backgroundColor: 'blue',
-    })} className="coinToss">
+     <div css={css
+      `width: 350px;
+      height: 300px;
+      background-color: #AF7AC5  ;
+      border:  2px solid pink;
+      color: black;
+      padding: 20px 0;
+      margin: 100px 200px 100px 500px;
+      text-align: center;
+      border-radius: 10px;`} className="coinToss">
         <div id="coin" key={+new Date()}>
             <div className= {coinValue === "TAIL" ? "side-a":"side-b"}>
               <h2> {coinValue}</h2>
             </div>
         </div>
-        <h2> Flip a Coin</h2>
+        <h2 css={css`font-family:Arial;`}> Flip a Coin</h2>
       <button css ={styles.flipButton} id="btn" onClick={() => flipCoin()}>
        Flip Coin
       </button>
@@ -31,9 +36,13 @@ export const CoinToss = () => {
 
  const styles = { flipButton:css
  `padding: 10px;
- background-color: hotpink;
+ margin: 40px;
+ background-color: #D7BDE2;
  font-size: 24px;
  border-radius: 4px;
  color: black;
  font-weight: bold;
- &:hover {color: white};`,}
+ &:hover {color: white};
+ `,}
+
+ 
